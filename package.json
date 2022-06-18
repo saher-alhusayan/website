@@ -1,11 +1,11 @@
 {
   "name": "website",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "build": "browserify database.js -o bundle.js",
-    "watch": "watchify database.js -o bundle.js"
+    "build": "browserify firebase.js -o bundle.js",
+    "watch": "watchify firebase.js -o bundle.js"
   },
   "repository": {
     "type": "git",
@@ -20,10 +20,12 @@
   "homepage": "https://github.com/saher-alhusayan/website#readme",
   "dependencies": {
     "dayjs": "^1.11.3",
+    "firebase": "^9.8.3",
     "nedb": "^1.8.0"
   },
   "devDependencies": {
     "browserify": "^17.0.0",
+    "esmify": "^2.1.1",
     "watchify": "^4.0.0"
   }
 }
